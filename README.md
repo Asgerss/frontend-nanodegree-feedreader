@@ -1,3 +1,18 @@
+# Feed Reader Testing
+
+Step 1: download the application.
+
+Step 2: launch the application by opening index.html in a browser.
+
+Step 3: enjoy the news feed.
+
+Step 4: when you've read all the articles on the initial page, click the hamburger icon in the top left corner and select a new feed, the new feed will now load.
+
+Info: in the bottom of the page you will see the result of a function test of the site, hopefully they all passed.
+
+
+
+
 # Project Overview
 
 In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.
