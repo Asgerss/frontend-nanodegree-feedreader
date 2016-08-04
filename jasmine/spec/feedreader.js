@@ -71,6 +71,24 @@ $(function() {
           * visibility when the menu icon is clicked. This test
           * should have two expectations: does the menu display when
           * clicked and does it hide when clicked again.
+                            What I generally tend to do is create a stub and assign the event to the stub. Then trigger the click event and check if it was called
+
+                            describe('view interactions', function () {
+                                beforeEach(function () {
+                                    this.clickEventStub = sinon.stub(this, 'clickEvent');
+                                });
+
+                                afterEach(function () {
+                                    this.clickEvent.restore();
+                                });
+
+                                describe('when item is clicked', function () {
+                                    it('event is fired', function () {
+                                        this.elem.trigger('click');
+                                        expect(this.clickEventStub).toHaveBeenCalled();
+                                    });
+                                });
+                            });
           */
     });
 
